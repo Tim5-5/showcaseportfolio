@@ -1,0 +1,150 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2efe5;
+  color: #323232;
+}
+
+.hero {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hero .intro {
+  margin-bottom: 20px;
+}
+
+.hero .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero .menu a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 48px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero .menu a:hover {
+  color: #323232;
+}
+
+.hero .menu a.selected {
+  color: #323232;
+  text-decoration: underline;
+}
+
+.menu-description {
+  font-size: 20px;
+  max-width: 300px;
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 1000px;
+  transition: transform 0.3s ease;
+  display: flex;
+  background-color: #607274;
+  color: white;
+  position: relative;
+}
+
+.portfolio-item.hidden {
+  display: none;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.portfolio-item-content {
+  flex: 1;
+  padding: 40px 50px;
+}
+
+.portfolio-item h2,
+.portfolio-item p {
+  margin: 0;
+}
+
+.portfolio-item h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.portfolio-item p {
+  font-size: 20px;
+}
+
+.portfolio-item .category {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  font-size: 20px;
+  color: white;
+}
+.horizontal-line {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #323232;
+  margin: 50px 0;
+  border-top-color: #ccc;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #323232;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #555;
+}

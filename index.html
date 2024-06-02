@@ -5,151 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Showcase Portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap">
-<style>
-    body {
-      font-family: 'Manrope', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2efe5;
-      color: #323232;
-    }
-    .hero {
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-    .hero .intro {
-      margin-bottom: 20px;
-    }
-    .hero .menu-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    .hero .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .hero .menu a {
-      color: #323232;
-      text-decoration: none;
-      margin: 5px 0;
-      font-size: 48px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .hero .menu a:hover {
-      color: #ccc;
-      text-decoration: underline;
-    }
-    .menu-description {
-      font-size: 20px;
-      max-width: 300px; /* Adjust as needed */
-      margin-top: 5px; /* Adjust as needed */
-      word-wrap: break-word; /* Allow long words to wrap to the next line */
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .portfolio {
-      display: flex;
-      flex-direction: column; /* Display items vertically */
-      align-items: center; /* Center items horizontally */
-    }
-    .portfolio-item {
-      margin-bottom: 30px;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      overflow: hidden;
-      text-decoration: none;
-      width: 1000px;
-      transition: transform 0.3s ease;
-      display: flex; /* Added */
-    }
-    .portfolio-item:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      transform: scale(1.05);
-    }
-    .portfolio-item img {
-      height: 400px;
-      width: 600px;
-      object-fit: cover;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-    }
-    .portfolio-item-content {
-      flex: 1;
-      padding: 40px 50px;
-    }
-    .portfolio-item h2,
-    .portfolio-item p {
-      margin: 0;
-    }
-    .portfolio-item h2 {
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .portfolio-item p {
-      font-size: 20px;
-    }
-.horizontal-line {
-  width: 100%;
-  border: 0;
-  border-top: 1px solid #323232;
-  margin: 50px 0; /* Adjusted margin */
-}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
     <div class="hero">
       <div class="intro">
-        <p>Hello, I'm Tim. Welcome to my portfolio website. I'm a student specializing in media design, game development and business. Explore my work and projects below.</p>
+        <h2>👋 Hi, I'm Tim!</h2> <p> Welcome to my portfolio website. I'm a student specializing in media design, game development and business. Explore my work and projects below.</p>
+		<a href="aboutme.html" class="back-button">About me</a>
       </div>
       <hr class="horizontal-line">
       <div class="menu-container">
         <div class="menu">
-          <a href="#" class="filter" data-category="all">All</a>
+          <a href="#" class="filter selected" data-category="all">All</a>
           <a href="#" class="filter" data-category="business">Business</a>
           <a href="#" class="filter" data-category="gamedev">Game Dev</a>
           <a href="#" class="filter" data-category="mediadesign">Media Design</a>
         </div>
-        <div class="menu-description"></div>
+        <div class="menu-description">Explore all projects.</div>
       </div>
-	  <hr class="horizontal-line">
+      <hr class="horizontal-line">
     </div>
   </div>
 
   <div class="portfolio">
-    <a href="item1.html" class="portfolio-item business">
+    <a href="item3.html" class="portfolio-item business">
       <div class="portfolio-item-content">
-        <h2>Portfolio Item 1</h2>
-        <p>Description of Portfolio Item 1</p>
+        <h2>PowerBI Dashboards</h2>
+        <p>Various dashboard created in PowerBI using DAX</p>
+		 <p class="category">Business</p>
       </div>
-      <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 1">
+      <img src="img/powerbi.PNG" alt="Portfolio Item 1">
     </a>
     <a href="item2.html" class="portfolio-item gamedev">
       <div class="portfolio-item-content">
-        <h2>Portfolio Item 2</h2>
-        <p>Description of Portfolio Item 2</p>
+        <h2>Environment Art</h2>
+        <p>Collection of various different environments I made in the T7 engine</p>
+		<p class="category">Game development</p>
       </div>
-      <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 2">
+      <img src="img/spawnfinal.png" alt="Portfolio Item 2">
     </a>
-    <a href="item3.html" class="portfolio-item mediadesign">
+    <a href="item1.html" class="portfolio-item mediadesign">
       <div class="portfolio-item-content">
-        <h2>Portfolio Item 3</h2>
-        <p>Description of Portfolio Item 3</p>
+        <h2>Webdevelopment</h2>
+        <p>Various pieces of code I wrote using Javascript</p>
+		<p class="category">Media design</p>
       </div>
-      <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 3">
+      <img src="img/code.PNG" alt="Portfolio Item 3">
+    </a>
+	<a href="item4.html" class="portfolio-item gamedev">
+      <div class="portfolio-item-content">
+        <h2>GSC Scripts</h2>
+        <p>Code made with the GSC scripting language for the T7 engine</p>
+		<p class="category">Game development</p>
+      </div>
+      <img src="img/gsc.PNG" alt="Portfolio Item 4">
     </a>
   </div>
 
@@ -159,7 +70,7 @@
       const items = document.querySelectorAll('.portfolio-item');
       const menuDescription = document.querySelector('.menu-description');
 
-      // default optie is "all" (werkt nog niet)
+      // Default optie is "all"
       filters.forEach(filter => {
         if (filter.getAttribute('data-category') === 'all') {
           filter.classList.add('selected');
@@ -167,7 +78,9 @@
       });
 
       filters.forEach(filter => {
-        filter.addEventListener('click', function() {
+        filter.addEventListener('click', function(event) {
+          event.preventDefault();
+          
           filters.forEach(f => f.classList.remove('selected'));
           filter.classList.add('selected');
 
@@ -179,9 +92,9 @@
               item.classList.add('hidden');
             }
           });
-          // menu beschrijvingen per categorie
-          switch (category) {
 
+          // category beschrijvingen 
+          switch (category) {
             case 'all':
               menuDescription.textContent = 'Explore all projects.';
               break;
@@ -192,7 +105,7 @@
               menuDescription.textContent = 'Discover my game development projects.';
               break;
             case 'mediadesign':
-              menuDescription.textContent = 'View my projects in media design.iew my projects in media design.iew my projects in media design.iew my projects in media design.iew my projects in media design.';
+              menuDescription.textContent = 'View my projects in media design.';
               break;
             default:
               menuDescription.textContent = '';

@@ -1,0 +1,53 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.left-half,
+.right-half {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-half img {
+  max-width: 90%;
+  height: auto;
+  
+}
+
+.right-half h2 {
+  margin-top: 0;
+}
+
+.right-half p {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.specs p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.spec-details {
+  text-align: right;
+}
+
+.image-description {
+  font-size: 14px;
+  color: #666; 
+}
