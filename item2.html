@@ -1,1 +1,52 @@
-animatie test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environment Art</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pagestyle.css">
+</head>
+<body class="fade-out">
+
+  <div class="container">
+    <div class="hero">
+      <a href="index.html" class="back-button">Back</a>
+      <h1>Environment Art</h1>
+      <hr class="horizontal-line">
+    </div>
+    <div class="content-wrapper">
+      <div class="left-half">
+        <img src="img/spawnfinal.png" alt="Image">
+        <p class="image-description">Spawn area</p>
+		<img src="img/paptunnel26.png" alt="Image">
+        <p class="image-description">Tunnel design (worn)</p>
+		<img src="img/perron26.png" alt="Image">
+        <p class="image-description">Perron station 1</p>
+      </div>
+      <div class="right-half">
+        <p>I do some gamedevelopment as a hobby. This consists of level design, scripting, gameplay design and a lot of graphic design. These are some screenshots of environments I created in the T7 engine. This is the engine used by Call of Duty Black Ops 3 and was released in 2016. So there are some graphical limitations especially compared to the new developments of Unreal Engine 5.</p>
+		<hr class="horizontal-line">
+        <div class="specs">
+          <p>Field <span class="spec-details">Game development</span></p>
+          <hr class="horizontal-line">
+          <p>Language <span class="spec-details">N / A</span></p>
+          <hr class="horizontal-line">
+          <p>Year <span class="spec-details">2016 - 2024</span></p>
+          <hr class="horizontal-line">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      setTimeout(function() {
+        document.body.classList.remove('fade-out');
+      }, 100);
+    });
+  </script>
+
+</body>
+</html>

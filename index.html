@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fade-in">
 
   <div class="container">
     <div class="hero">
       <div class="intro">
-        <h2>👋 Hi, I'm Tim!</h2> <p> Welcome to my portfolio website. I'm a student specializing in media design, game development and business. Explore my work and projects below.</p>
-		<a href="aboutme.html" class="back-button">About me</a>
+        <h2>👋 Hi, I'm Tim!</h2>
+        <p>Welcome to my portfolio website. I'm a student specializing in media design, game development and business. Explore my work and projects below.</p>
+        <a href="aboutme.html" class="back-button">About me</a>
       </div>
       <hr class="horizontal-line">
       <div class="menu-container">
@@ -23,7 +24,7 @@
           <a href="#" class="filter" data-category="gamedev">Game Dev</a>
           <a href="#" class="filter" data-category="mediadesign">Media Design</a>
         </div>
-        <div class="menu-description">Explore all projects.</div>
+        <div class="menu-description">Explore all projects, consisting of media design, game development and business.</div>
       </div>
       <hr class="horizontal-line">
     </div>
@@ -34,7 +35,7 @@
       <div class="portfolio-item-content">
         <h2>PowerBI Dashboards</h2>
         <p>Various dashboard created in PowerBI using DAX</p>
-		 <p class="category">Business</p>
+        <p class="category">Business</p>
       </div>
       <img src="img/powerbi.PNG" alt="Portfolio Item 1">
     </a>
@@ -42,7 +43,7 @@
       <div class="portfolio-item-content">
         <h2>Environment Art</h2>
         <p>Collection of various different environments I made in the T7 engine</p>
-		<p class="category">Game development</p>
+        <p class="category">Game development</p>
       </div>
       <img src="img/spawnfinal.png" alt="Portfolio Item 2">
     </a>
@@ -50,70 +51,77 @@
       <div class="portfolio-item-content">
         <h2>Webdevelopment</h2>
         <p>Various pieces of code I wrote using Javascript</p>
-		<p class="category">Media design</p>
+        <p class="category">Media design</p>
       </div>
       <img src="img/code.PNG" alt="Portfolio Item 3">
     </a>
-	<a href="item4.html" class="portfolio-item gamedev">
+    <a href="item4.html" class="portfolio-item gamedev">
       <div class="portfolio-item-content">
         <h2>GSC Scripts</h2>
         <p>Code made with the GSC scripting language for the T7 engine</p>
-		<p class="category">Game development</p>
+        <p class="category">Game development</p>
       </div>
       <img src="img/gsc.PNG" alt="Portfolio Item 4">
     </a>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const filters = document.querySelectorAll('.filter');
-      const items = document.querySelectorAll('.portfolio-item');
-      const menuDescription = document.querySelector('.menu-description');
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filters = document.querySelectorAll('.filter');
+    const items = document.querySelectorAll('.portfolio-item');
+    const menuDescription = document.querySelector('.menu-description');
 
-      // Default optie is "all"
-      filters.forEach(filter => {
-        if (filter.getAttribute('data-category') === 'all') {
-          filter.classList.add('selected');
-        }
-      });
 
-      filters.forEach(filter => {
-        filter.addEventListener('click', function(event) {
-          event.preventDefault();
-          
-          filters.forEach(f => f.classList.remove('selected'));
-          filter.classList.add('selected');
+    filters.forEach(filter => {
+      if (filter.getAttribute('data-category') === 'all') {
+        filter.classList.add('selected');
+      }
+    });
 
-          const category = this.getAttribute('data-category');
-          items.forEach(item => {
-            if (category === 'all' || item.classList.contains(category)) {
-              item.classList.remove('hidden');
-            } else {
-              item.classList.add('hidden');
-            }
-          });
+    filters.forEach(filter => {
+      filter.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        filters.forEach(f => f.classList.remove('selected'));
+        filter.classList.add('selected');
 
-          // category beschrijvingen 
-          switch (category) {
-            case 'all':
-              menuDescription.textContent = 'Explore all projects.';
-              break;
-            case 'business':
-              menuDescription.textContent = 'Browse through my business-related projects.';
-              break;
-            case 'gamedev':
-              menuDescription.textContent = 'Discover my game development projects.';
-              break;
-            case 'mediadesign':
-              menuDescription.textContent = 'View my projects in media design.';
-              break;
-            default:
-              menuDescription.textContent = '';
-              break;
+        const category = this.getAttribute('data-category');
+        items.forEach(item => {
+          if (category === 'all' || item.classList.contains(category)) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
           }
         });
+
+
+        switch (category) {
+          case 'all':
+            menuDescription.textContent = 'Explore all projects, consisting of media design, game development and business.';
+            break;
+          case 'business':
+            menuDescription.textContent = 'Browse through my business-related projects.';
+            break;
+          case 'gamedev':
+            menuDescription.textContent = 'Discover my game development projects.';
+            break;
+          case 'data-science':
+            menuDescription.textContent = 'Explore my data science projects.';
+            break;
+          case 'webdev':
+            menuDescription.textContent = 'Check out my web development projects.';
+            break;
+          default:
+            menuDescription.textContent = 'Exlore my media related projects.';
+            break;
+        }
       });
     });
-  </script>
+  });
+
+  window.addEventListener('beforeunload', function(event) {
+    document.body.classList.add('fade-out');
+  });
+</script>
 </body>
 </html>

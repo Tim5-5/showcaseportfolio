@@ -1,8 +1,52 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2efe5;
+  color: #323232;
+}
 
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
 
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hero .back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #323232;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .back-button:hover {
+  background-color: #555;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #323232;
+  margin: 50px 0;
+  border-top-color: #ccc;
 }
 
 .content-wrapper {
@@ -18,7 +62,6 @@
 .left-half img {
   max-width: 90%;
   height: auto;
-  
 }
 
 .right-half h2 {
@@ -28,13 +71,6 @@
 .right-half p {
   margin-top: 0;
   font-size: 24px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .specs p {
@@ -49,5 +85,5 @@
 
 .image-description {
   font-size: 14px;
-  color: #666; 
+  color: #666;
 }

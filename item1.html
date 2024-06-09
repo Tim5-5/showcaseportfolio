@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web development</title>
+  <title>Web Development</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pagestyle.css">
 </head>
-<body>
+<body class="fade-out">
 
   <div class="container">
     <div class="hero">
       <a href="index.html" class="back-button">Back</a>
-      <h1>PowerBI Dashboards</h1>
+      <h1>Web Development</h1>
       <hr class="horizontal-line">
     </div>
     <div class="content-wrapper">
       <div class="left-half">
-        <!-- afbeelding hier -->
-        <img src="img/code.png" alt="Image">
-		<p class="image-description">Beschrijving afbeelding</p>
+        <img src="img/code.PNG" alt="Image">
+        <p class="image-description">Javascript code</p>
       </div>
       <div class="right-half">
-        <!-- text hier -->
         <p>I created a dropdown menu with Javascript that filters portfolio items based on category. This tool makes it easy for visitors to browse through projects by category. With just a click, users can explore projects that match their interests, enhancing their browsing experience.</p>
         <hr class="horizontal-line">
         <div class="specs">
@@ -36,6 +34,15 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      setTimeout(function() {
+        document.body.classList.remove('fade-out');
+      }, 100);
+    });
+  </script>
 
 </body>
 </html>
