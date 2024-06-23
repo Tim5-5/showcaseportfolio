@@ -14,7 +14,7 @@ Welkom bij mijn portfolio website! Hier vind je een overzicht van mijn projecten
 
 ## Overzicht
 
-Op deze website presenteer ik mijn diverse projecten in drie verschillende velden: Business, Game Development en Media Design. Elk project is een weerspiegeling van mijn vaardigheden, creativiteit en toewijding aan mijn vakgebied.
+Op deze website presenteer ik mijn diverse projecten in drie verschillende velden: Business, Game Development en Media Design. 
 
 ## Projecten
 
