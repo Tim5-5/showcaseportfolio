@@ -1,11 +1,11 @@
+
 body {
   font-family: 'Manrope', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2efe5;
-  color: #323232;
+  background-color: #f2efe5; 
+  color: #323232; 
 }
-
 
 body.fade-out {
   opacity: 0;
@@ -17,10 +17,12 @@ body.fade-out {
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
-  width: 100%;
   padding: 20px;
   box-sizing: border-box;
   font-size: 24px;
@@ -30,27 +32,27 @@ body.fade-out {
 .hero .back-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #323232;
-  color: white;
+  background-color: #323232; 
+  color: #ffffff; 
   text-decoration: none;
   border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 
 .hero .back-button:hover {
-  background-color: #555;
+  background-color: #555555; 
 }
 
 .horizontal-line {
   width: 100%;
   border: 0;
-  border-top: 1px solid #323232;
+  border-top: 1px solid #ccc; 
   margin: 50px 0;
-  border-top-color: #ccc;
 }
 
 .content-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .left-half,
@@ -59,31 +61,51 @@ body.fade-out {
   padding: 20px;
 }
 
-.left-half img {
-  max-width: 90%;
-  height: auto;
-}
-
 .right-half h2 {
   margin-top: 0;
 }
 
 .right-half p {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 18px;
 }
 
-.specs p {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
+
+.contact-form {
+  margin-top: 20px;
 }
 
-.spec-details {
-  text-align: right;
+.contact-form label {
+  font-weight: bold;
 }
 
-.image-description {
-  font-size: 14px;
-  color: #666;
+.contact-form input[type=text],
+.contact-form textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-sizing: border-box;
+  color: #323232; 
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form input[type=submit] {
+  background-color: #323232; 
+  color: #ffffff; 
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #555555; 
 }
